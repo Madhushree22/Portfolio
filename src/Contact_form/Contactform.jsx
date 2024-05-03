@@ -23,11 +23,7 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className='form' style={{
-            backgroundImage:
-                "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/N13e7awhgiljgescq/videoblocks-bouncing-arrow-pointing-down-symbol-of-attention-with-copy-space_r59tly9fu_thumbnail-1080_01.png')",
-
-        }}>
+        <div className='form' >
             <div className='app__contact-form'>
 
                 <div className='app__form'>

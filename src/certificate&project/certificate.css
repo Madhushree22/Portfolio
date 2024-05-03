@@ -1,81 +1,77 @@
 .app__certificate {
     padding: 3rem;
-    background-color: rgb(16, 16, 16);
+    background-color: #e6ccb2;
+}
+
+.certpro {
+    background-color: #ede0d4;
 }
 
 .app__certificate-alone h2 {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    color: wheat;
+    color: #7f5539;
     font-family: serif;
     letter-spacing: 2px;
 }
 
 .app__projects {
     padding: 1rem;
-    background-color: rgb(1, 1, 76);
 
 }
 
 .app__certificate-alone {
     padding: 1rem;
-    background-color: rgb(1, 1, 76);
 }
 
 .app__projects h2 {
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
-    color: wheat;
+    color: #7f5539;
     font-family: serif;
     letter-spacing: 2px;
 }
 
 .caption {
     margin-bottom: -15px;
-    color: tomato;
-    font-weight: bolder;
+    color: #795334;
+    font-weight: bold;
     padding: 1rem;
 }
 
 .img {
     border-radius: 50%;
     padding: 3.5rem;
-    /* margin-left: 80px; */
 }
 
 .img2 {
     border-radius: 50%;
     padding: 3.5rem;
-    /* margin-left: 80px; */
 }
 
 .custom__buttonn {
-    border-radius: 50%;
     padding: 12px;
     margin-top: 25px;
     margin-bottom: 20px;
-    background-color: rgb(9, 9, 53);
-    color: wheat;
-    box-shadow: 1px 1px 5px 1px rgb(82, 82, 177);
+    color: #5b4431;
+    box-shadow: 1px 1px 10px #b08968;
+    border-radius: 70px;
     border: none;
-    /* text-shadow: 1px 1px 5px 4px firebrick; */
     letter-spacing: 1px;
 }
 
 .custom__buttonn:hover {
-    box-shadow: 1px 1px 5px 1px rgb(82, 82, 177) inset;
+    box-shadow: 1px 1px 5px #b08968 inset;
+    color: #7f5539;
 }
 
-.heading {
-    font-size: large;
-
-}
-.item{
+.item {
     position: relative;
     z-index: 0;
 }
+
 .app__certificate__ {
     display: flex;
     justify-content: center;
@@ -90,16 +86,21 @@
     padding: 0rem 12.5rem 8rem 12.5rem;
 }
 
+.job_sim {
+    color: #9c6644;
+    margin-bottom: -25px;
+    font-weight: normal;
+}
+
+
 @media screen and (max-width: 1150px) {
     .app__projects {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -128,13 +129,11 @@
 @media screen and (max-width: 910px) {
     .app__projects {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -163,13 +162,11 @@
 @media screen and (max-width: 850px) {
     .app__projects {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -198,13 +195,11 @@
 @media screen and (max-width: 750px) {
     .app__projects {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -233,13 +228,11 @@
 @media screen and (max-width: 660px) {
     .app__projects {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 3rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -269,13 +262,11 @@
 @media screen and (max-width: 620px) {
     .app__projects {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
-        padding: 1rem;
-        background-color: rgb(1, 1, 76);
+        padding: 0.1rem 1rem 1rem 1rem;
     }
 
     .img {
@@ -298,6 +289,7 @@
     .app__certificate__ {
         display: block;
         justify-content: none;
+        /* margin-top: 50px; */
     }
 
     .app__project__ {
@@ -315,13 +307,11 @@
 
     .app__projects {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -357,13 +347,11 @@
 
     .app__projects {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -396,13 +384,11 @@
 @media screen and (max-width: 560px) {
     .app__projects {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -442,13 +428,11 @@
 
     .app__projects {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
 
     }
 
     .app__certificate-alone {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -483,13 +467,16 @@
 
     .app__projects {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
 
+    }
+
+    .caption {
+        padding: 1rem 0 1rem 0;
+        font-weight: normal;
     }
 
     .app__certificate-alone {
         padding: 1rem;
-        background-color: rgb(1, 1, 76);
     }
 
     .img {
@@ -522,6 +509,15 @@
 
 
 @media screen and (max-width: 473px) {
+
+    .app__certificate-alone {
+        padding: 0 1rem 1rem 1rem 1rem;
+    }
+
+    .caption {
+        padding: 0 0rem 1rem 0rem;
+        font-weight: normal;
+    }
 
     .app__certificate {
         padding: 1rem;

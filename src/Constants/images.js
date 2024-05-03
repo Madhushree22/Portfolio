@@ -1,16 +1,20 @@
-import java from '../asset/java_full.jpeg';
-import web_design from '../asset/web_design.jpg';
-import html from '../asset/html.jpeg';
-import css from '../asset/css.jpg';
-import sql from '../asset/sql.jpg';
-import virtual from '../asset/virtual.jpg';
-import cloud from '../asset/cloud_computing.jpeg';
-import angular from '../asset/angular.png';
-import ui from '../asset/ui.jpeg';
-import show from '../asset/showbooking.jpg';
-import travel from '../asset/travelling.jpg';
-import wall from '../asset/walleper.jpeg';
-import madhu1 from'../asset/madhuu.jpg';
+import java from '../Assets/java_full.jpeg';
+import web_design from '../Assets/web_design.jpg';
+import html from '../Assets/html.jpeg';
+import css from '../Assets/css.jpg';
+import sql from '../Assets/sql.jpg';
+import virtual from '../Assets/virtual.jpg';
+import cloud from '../Assets/cloud_computing.jpeg';
+import angular from '../Assets/angular.png';
+import ui from '../Assets/ui.jpeg';
+import show from '../Assets/showbooking.jpg';
+import travel from '../Assets/travelling.jpg';
+import wall from '../Assets/walleper.jpeg';
+import madhu1 from'../Assets/madhuu.jpg';
+import acc_java_js from '../Assets/java__job.jpeg';
+import acc_prdt_js from '../Assets/acc__job.jpg';
+import bp_prdt_js from '../Assets/bp__job.png'
+
 
 export default{
     java,
@@ -25,5 +29,8 @@ export default{
     show,
     travel,
     wall,
-    madhu1
+    madhu1,
+    acc_java_js,
+    acc_prdt_js,
+    bp_prdt_js
 }

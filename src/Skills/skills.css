@@ -1,7 +1,16 @@
 .skills {
-    background-color: rgb(1, 1, 76);
-    color: wheat;
+    background-color: #e5d0bc;
+    color: #7f5539;
     padding: 3rem 8rem 5rem 7rem;
+}
+
+.fade-in {
+    transform: translateX(-100%);
+    transition: transform 1.5s ease-in-out;
+}
+
+.visible {
+    transform: translateX(0);
 }
 
 .app__skillss {
@@ -13,7 +22,7 @@
     margin-top: 50px;
     margin-bottom: 82px;
     text-align: center;
-    color: wheat;
+    color: #7f5539;
     font-family: serif;
     letter-spacing: 2px;
     text-align: center;
@@ -733,7 +742,7 @@
 }
 
 @media screen and (max-width: 315px) {
-    
+
     .sub4,
     .sub5,
     .sub6,

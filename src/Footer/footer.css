@@ -1,11 +1,12 @@
 .app__footer {
-    background-color: rgb(5, 5, 32);
-    color: whitesmoke;
+    background-color: #e5d0bc;
+    color: #7f5539;
+
     padding: 3rem 4rem 1rem 4rem;
 }
 
 .app__footer-name {
-    color: wheat;
+    color: #72482c;
     font-family: serif;
     letter-spacing: 1px;
 }
@@ -16,11 +17,11 @@
 }
 
 .app__footer-icons a {
-    color: white;
+    color: #7f5539;
 
 }
 
-.git{
+.git {
     margin-left: 20px;
 }
 
@@ -28,10 +29,8 @@
     margin-top: 60px;
 }
 
-.app__footer-icons{
+.app__footer-icons {
     display: flex;
     justify-content: center;
     font-size: 25px;
 }
-
-

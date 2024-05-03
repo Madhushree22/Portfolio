@@ -6,22 +6,22 @@
 }
 
 .custom__button {
-    box-shadow: 1px 1px 5px 1px rgb(82, 82, 177);
-    background-color: rgb(9, 9, 53);
-    color: wheat;
+    /* box-shadow: 1px 1px 5px 1px rgb(82, 82, 177); */
+    /* background-color: #b08968; */
+    color: #5b4431;
     margin-top: 30px;
     cursor: pointer;
     padding: 12px;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
     letter-spacing: 1px;
     font-family: serif;
+    box-shadow: 1px 1px 10px #b08968;
 }
 
-.custom__button:focus {
-    color: whitesmoke;
-}
+
 
 .custom__button:hover {
-    box-shadow: 1px 1px 5px 1px rgb(82, 82, 177) inset;
+    box-shadow: 1px 1px 5px #b08968 inset;
+    color: #7f5539;
 }

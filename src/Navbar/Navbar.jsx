@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className='navbar' >
             <div className="navleft">
-                <LiaSuitcaseSolid style={{ color: "white", marginLeft: 20, fontSize: 20, marginTop: 5 }} />
+                <LiaSuitcaseSolid style={{ color: "#7f5539", marginLeft: 20, fontSize: 20, marginTop: 5 }}  className='suitcase'/>
                 <p className='name'><a href='#'> Madhushree S</a></p>
             </div>
             <ul className='navbar__links'>
@@ -19,15 +19,13 @@ const Navbar = () => {
                 <li><a href='#contact'>CONTACT</a></li>
             </ul>
             <div className='navbar__smallscreen' >
-                <GiHamburgerMenu fontSize={20} style={{ color: "white" }} onClick={() => { setToggleMenu(true) }} className='navbar__open' />
+               <div className='open-icon'>
+                    <GiHamburgerMenu fontSize={20} style={{ color: "#ffff" }} onClick={() => { setToggleMenu(true) }} className='navbar__open' />
+               </div>
                 {toggleMenu && (
-                    <div className='navbar__smallscreen-overlay slide-bottom' style={{
-                        backgroundImage:
-                            "url('https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/video/N13e7awhgiljgescq/videoblocks-bouncing-arrow-pointing-down-symbol-of-attention-with-copy-space_r59tly9fu_thumbnail-1080_01.png')",
-                       
-                    }}>
+                    <div className='navbar__smallscreen-overlay slide-bottom'>
+                        <IoMdClose fontSize={20} style={{ color: "#ffff" }} onClick={() => setToggleMenu(false)} className='navbar__close' />
                         <ul className='navbar__smallscreen-links'>
-                            <IoMdClose fontSize={20} onClick={() => setToggleMenu(false)} className='navbar__close' />
                             <li><a href='#home' onClick={() => setToggleMenu(false)}>HOME</a></li>
                             <li><a href='#about' onClick={() => setToggleMenu(false)}>ABOUT</a></li>
                             <li><a href='#skills' onClick={() => setToggleMenu(false)}>SKILLS</a></li>

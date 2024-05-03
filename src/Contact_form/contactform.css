@@ -1,6 +1,5 @@
 .form {
-    background-color: rgb(8, 8, 34);
-    padding: .5rem 20rem .5rem 20rem;
+    background-color: #ede0d4;    padding: .5rem 20rem .5rem 20rem;
     font-family: serif;
     letter-spacing: 2px;
 }
@@ -11,12 +10,13 @@
     margin-top: 1rem;
     width: 550px;
     justify-content: center;
-    border-width: 3px;
-    border-color: rgb(23, 46, 115);
-    box-shadow: 1px 1px 5px 1px rgb(23, 46, 115) inset;
-    border-radius: 10px;
+    border-width: 1px;
+    border-color: #7f5539;
+    box-shadow: 1px 1px 3px#7f5539 inset;
+    border-radius: 5px;
     padding: 0rem .5rem 0rem .5rem;
 }
+
 
 .send {
     display: flex;

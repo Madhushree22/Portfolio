@@ -1,10 +1,10 @@
 .app__contact {
-    background-color: rgb(1, 1, 76);
+    background-color: #ede0d4;
     padding: 4rem;
 }
 
 .app__contact-subtitle {
-    color: rgb(234, 224, 224);
+    color: #5b391d;
     font-size: smaller;
     align-items: center;
     margin-bottom: 5px;
@@ -12,7 +12,7 @@
 }
 
 .app__contact-title {
-    color: wheat;
+    color: #042b44;
     margin-bottom: 50px;
     letter-spacing: 2px;
 }
@@ -21,8 +21,7 @@
     display: flex;
     justify-content: center;
     flex: 1;
-    color: white;
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 1rem 8rem 4rem;
 }
 
 .inner__elements {
@@ -34,38 +33,39 @@
     display: flex;
     justify-content: center;
     flex: 1;
-    color: white;
     padding: 8rem 0rem 1rem rem;
 }
 
 .app__contact-location {
-    box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
+    box-shadow: 1px 1px 3px#7f5539 inset;
     padding: 1rem 7.6rem 1rem 7rem;
-    color: wheat;
+    color: #5b391d;
     letter-spacing: 1px;
 
 }
 
+
+
 .app__contact-phone {
-    box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
+    box-shadow: 1px 1px 3px#7f5539 inset;
     padding: 1rem 7rem 1rem 7rem;
     margin-left: 230px;
-    color: wheat;
+    color: #5b391d;
     letter-spacing: 2px;
 }
 
 .app__contact-email {
-    box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
+    box-shadow: 1px 1px 3px#7f5539 inset;
     padding: 1rem 4rem 1rem 3.2rem;
     margin-left: 50px;
-    color: wheat;
+    color: #5b391d;
 }
 
 .app__contact-linkedin {
-    box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
+    box-shadow: 1px 1px 3px#7f5539 inset;
     padding: 1rem 2.5rem 1rem 2.1rem;
     margin-left: 238px;
-    color: wheat;
+    color: #5b391d;
 }
 
 .app__contact-info {
@@ -75,9 +75,15 @@
 }
 
 .app__contact_info {
+    margin-left: 50px;
+    margin-top: 5px;
+    color: #042b44;
+}
+
+.app__contact_info1 {
     margin-left: 20px;
     margin-top: 5px;
-
+    color: #042b44;
 }
 
 
@@ -99,8 +105,9 @@
 } */
 
 .app__contact_email-info {
-    margin-left: 105px;
+    margin-left: 110px;
     margin-top: 5px;
+    color: #042b44;
 }
 
 .app__contact-email_infoo {
@@ -112,18 +119,18 @@
 } */
 
 .app__contact_linked-info {
-    margin-left: 95px;
+    margin-left: 105px;
     margin-top: 5px;
+    color: #042b44;
 }
 
 .app__contact-linked_infoo a {
     text-decoration: none;
-    color: wheat;
+    color: #5b391d;
 }
 
 .app__contact-linked_infoo a:hover {
-    color: cadetblue;
-}
+    color: #c28451;}
 
 .email_icon {
     margin-left: 20px;
@@ -141,7 +148,6 @@
     .app__contact-first {
         display: flex;
         flex: 1;
-        color: white;
         padding: 1rem 2rem 1rem 2rem;
     }
 
@@ -149,21 +155,18 @@
         display: flex;
         /* flex-direction: column; */
         flex: 1;
-        color: white;
         padding: 2rem 2rem 1rem 2rem;
     }
 
     .app__contact-location {
         margin-left: 20px;
         padding: 1rem 3.4rem 1rem 4rem;
-        color: wheat;
         letter-spacing: 1px;
     }
 
     .app__contact-phone {
         padding: 1rem 3.5rem 1rem 3.5rem;
         margin-left: 30px;
-        color: wheat;
         letter-spacing: 2px;
     }
 
@@ -171,7 +174,6 @@
         /* box-shadow: none; */
         padding: 1rem 2rem 1rem .5rem;
         margin-left: -30px;
-        color: wheat;
     }
 
     .app__contact-email_infoo {
@@ -183,7 +185,6 @@
         padding: 1rem 2rem 1rem 1rem;
         margin-left: 10px;
         /* margin-top: 50px; */
-        color: wheat;
     }
 
     .app__contact-linked_infoo {
@@ -199,7 +200,6 @@
     .app__contact-first {
         display: flex;
         flex: 1;
-        color: white;
         padding: 1rem 2rem 1rem 2rem;
     }
 
@@ -207,21 +207,18 @@
         display: flex;
         /* flex-direction: column; */
         flex: 1;
-        color: white;
         padding: 2rem 2rem 1rem 2rem;
     }
 
     .app__contact-location {
         margin-left: 20px;
         padding: 1rem 3.4rem 1rem 4rem;
-        color: wheat;
         letter-spacing: 1px;
     }
 
     .app__contact-phone {
         padding: 1rem 3.5rem 1rem 3.5rem;
         margin-left: 30px;
-        color: wheat;
         letter-spacing: 2px;
     }
 
@@ -229,7 +226,6 @@
         /* box-shadow: none; */
         padding: 1rem 2rem 1rem .5rem;
         margin-left: -30px;
-        color: wheat;
     }
 
     .app__contact-email_infoo {
@@ -241,7 +237,6 @@
         padding: 1rem 2rem 1rem 1rem;
         margin-left: 10px;
         /* margin-top: 50px; */
-        color: wheat;
     }
 
     .app__contact-linked_infoo {
@@ -257,7 +252,6 @@
     .app__contact-first {
         display: flex;
         flex: 1;
-        color: white;
         padding: 1rem 2rem 1rem 2rem;
     }
 
@@ -265,21 +259,18 @@
         display: flex;
         /* flex-direction: column; */
         flex: 1;
-        color: white;
         padding: 2rem 2rem 1rem 4rem;
     }
 
     .app__contact-location {
         margin-left: 20px;
         padding: 1rem 3.4rem 1rem 4rem;
-        color: wheat;
         letter-spacing: 1px;
     }
 
     .app__contact-phone {
         padding: 1rem 3.5rem 1rem 3.5rem;
         margin-left: 30px;
-        color: wheat;
         letter-spacing: 2px;
     }
 
@@ -287,7 +278,6 @@
         /* box-shadow: none; */
         padding: 1rem 2rem 1rem .5rem;
         margin-left: -30px;
-        color: wheat;
     }
 
     .app__contact-email_infoo {
@@ -299,7 +289,6 @@
         padding: 1rem 2rem 1rem 1rem;
         margin-left: 10px;
         /* margin-top: 50px; */
-        color: wheat;
     }
 
     .app__contact-linked_infoo {
@@ -324,7 +313,6 @@
     .app__contact-first {
         display: flex;
         flex: 1;
-        color: white;
         padding: 1rem 1rem 1rem 1rem;
     }
 
@@ -332,21 +320,18 @@
         display: flex;
         /* flex-direction: column; */
         flex: 1;
-        color: white;
         padding: 2rem 1rem 1rem 3rem;
     }
 
     .app__contact-location {
         margin-left: 20px;
         padding: 1rem 3.4rem 1rem 4rem;
-        color: wheat;
         letter-spacing: 1px;
     }
 
     .app__contact-phone {
         padding: 1rem 3.5rem 1rem 3.5rem;
         margin-left: 30px;
-        color: wheat;
         letter-spacing: 2px;
     }
 
@@ -354,7 +339,6 @@
         /* box-shadow: none; */
         padding: 1rem 2rem 1rem .5rem;
         margin-left: -30px;
-        color: wheat;
     }
 
     .app__contact-email_infoo {
@@ -366,7 +350,6 @@
         padding: 1rem 2rem 1rem 1rem;
         margin-left: 10px;
         /* margin-top: 50px; */
-        color: wheat;
     }
 
     .app__contact-linked_infoo {
@@ -390,7 +373,6 @@
     .app__contact-first {
         display: flex;
         flex: 1;
-        color: white;
         padding: 1rem 1rem 1rem 1rem;
     }
 
@@ -398,21 +380,18 @@
         display: flex;
         /* flex-direction: column; */
         flex: 1;
-        color: white;
         padding: 2rem 1rem 1rem 3rem;
     }
 
     .app__contact-location {
         margin-left: 20px;
         padding: 1rem 3.4rem 1rem 4rem;
-        color: wheat;
         letter-spacing: 1px;
     }
 
     .app__contact-phone {
         padding: 1rem 3.5rem 1rem 3.5rem;
         margin-left: 30px;
-        color: wheat;
         letter-spacing: 2px;
     }
 
@@ -420,7 +399,6 @@
         /* box-shadow: none; */
         padding: 1rem 2rem 1rem .5rem;
         margin-left: -30px;
-        color: wheat;
     }
 
     .app__contact-email_infoo {
@@ -431,7 +409,6 @@
     .app__contact-linkedin {
         padding: 1rem 2rem 1rem 1rem;
         margin-left: 10px;
-        color: wheat;
     }
 
     .app__contact-linked_infoo {
@@ -449,14 +426,13 @@
 }
 
 @media screen and (max-width: 600px) {
-    .app__contact {
-        /* padding: 3.5rem; */
-    }
+    /* .app__contact {
+        padding: 3.5rem;
+    } */
 
     .app__contact-first {
         display: flex;
         flex: 1;
-        color: white;
         /* padding: 1rem 1rem 1rem 4rem; */
         flex-direction: column;
     }
@@ -464,7 +440,6 @@
     .app__contact-second {
         display: flex;
         flex: 1;
-        color: white;
         /* padding: 2rem 1rem 1rem 1rem; */
         flex-direction: column;
     }
@@ -481,40 +456,31 @@
 
 
     .app__contact-location {
-        box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
         padding: 1rem 4rem 1rem 4.5rem;
-        color: wheat;
         letter-spacing: 1px;
         margin-left: 4px;
     }
 
     .app__contact-phone {
-        box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
         padding: 1rem 4rem 1rem 4.5rem;
         margin-left: 0px;
         margin-top: 50px;
-        color: wheat;
         letter-spacing: 2px;
     }
 
     .app__contact-email {
-        box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
         padding: 1rem 4rem 1rem 4rem;
         margin-left: -30px;
-        color: wheat;
     }
 
     .app__contact-linkedin {
-        box-shadow: 1px 1px 5px 1px rgb(23, 71, 115);
         padding: 1rem 4rem 1rem 4rem;
         margin-left: -75px;
         margin-top: 50px;
-        color: wheat;
     }
 
     .app__contact-linked_infoo a {
         text-decoration: none;
-        color: wheat;
         margin-left: 10px;
         font-size: medium;
     }
@@ -536,18 +502,16 @@
 
 @media screen and (max-width: 493px) {
     .app__contact-email {
-        box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
         padding: 1rem 6rem 1rem 5rem;
         /* margin-left: 50px; */
-        color: wheat;
+
     }
 
     .app__contact-linkedin {
-        box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
         padding: 1rem 7rem 1rem 6rem;
         /* margin-left: 0px; */
         margin-top: 50px;
-        color: wheat;
+
     }
 
 }
@@ -556,11 +520,10 @@
 
 
     .app__contact-linkedin {
-        box-shadow: 1px 1px 5px 1px rgb(23, 46, 115);
         padding: 1rem 6rem 1rem 5rem;
         /* margin-left: -30px; */
         margin-top: 50px;
-        color: wheat;
+
     }
 
     .app__contact-linked_infoo {
@@ -578,8 +541,7 @@
 
 @media screen and (max-width: 425px) {
 
-    .app__contact-linked_infoo a
-     {
+    .app__contact-linked_infoo a {
         font-size: 14.5px;
     }
 
@@ -604,12 +566,12 @@
 @media screen and (max-width: 400px) {
 
     .app__contact-linked_infoo a {
-            font-size: 14px;
-        }
-    
-        .app__contact-email_infoo {
-            font-size: 13.5px;
-            margin-left: 18px;
-        }
-        
+        font-size: 14px;
+    }
+
+    .app__contact-email_infoo {
+        font-size: 13.5px;
+        margin-left: 18px;
+    }
+
 }
