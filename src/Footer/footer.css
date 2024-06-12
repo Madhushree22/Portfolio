@@ -33,4 +33,11 @@
     display: flex;
     justify-content: center;
     font-size: 25px;
+    
+}
+.linked:hover{
+ animation: shake 0.5s infinite;
+}
+.git:hover {
+    animation: shake 0.5s infinite;
 }

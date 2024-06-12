@@ -27,6 +27,10 @@ export const ContactUs = () => {
             <div className='app__contact-form'>
 
                 <div className='app__form'>
+                    <div class="loaderr">
+                        <p class="text">
+                            Let's Connect<br/> & Create                        </p>
+                    </div>
                     <form ref={form} onSubmit={sendEmail}>
                         <input type="text" name="user_name" placeholder='Name' className='form__inputs' />
                         <input type="email" name="user_email" placeholder='Email_Id' className='form__inputs' />

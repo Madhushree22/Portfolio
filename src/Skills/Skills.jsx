@@ -18,6 +18,16 @@ const Skills = () => {
         <div className={`fade-in ${isVisible ? 'visible' : ''}`}>
           <h2>Skills I Owe!!</h2>
         </div>
+     <div className='animations'>
+          <div class="loader">
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__bar"></div>
+            <div class="loader__ball"></div>
+          </div>
+     </div>
         <div className='app__skillss'>
           <div className='skills__subjects'>
             <div className='small_list-1'>

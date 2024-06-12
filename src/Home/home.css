@@ -4,15 +4,16 @@
 
 .app__home {
     background: #ede0d4;
-    /* background: linear-gradient(199deg, rgba(9, 107, 144, 1) 0%, rgba(113, 183, 213, 1) 50%, rgba(136, 96, 208, 0.964561654740021) 100%); */
     color: white;
     padding: 0rem;
+    z-index: -1;
 }
+
 
 .home {
     flex: 1;
     display: flex;
-    padding: 3rem 4rem 2.5rem 4rem;
+    padding: 3rem 4rem 4rem 4rem;
 }
 
 .app__home-info {
@@ -26,15 +27,6 @@
     color: #7f5539;
     font-family: serif;
     font-size: large;
-
-}
-
-.Typewriter {
-    margin-top: 15px;
-    font-family: serif;
-    font-size: large;
-    margin-left: 30px;
-    color: #042b44;
 
 }
 
@@ -60,17 +52,6 @@
 
 
 
-@keyframes fade {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px) scale(0.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
 
 .app__home-img-containner {
     margin-left: 520px;
@@ -80,8 +61,6 @@
 .app__home-img-containner img {
     margin-left: 250px;
     margin-top: 30px;
-    /* width: 300px;
-    height: 380px; */
     width: 260px;
     height: 320px;
     border-radius: 20px;
@@ -91,26 +70,181 @@
 .home__footer-icons {
     font-size: 25px;
     margin-left: 30px;
-    padding: 0 0 1rem;
+    padding: .9rem 0rem 1rem 0rem;
 
 }
 
 .home__footer-linkedin {
     cursor: pointer;
+    font-size: 30px;
+}
+
+.home__footer-linkedin:hover {
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .home__footer-github {
     margin-left: 15px;
+    font-size: 30px;
+    
 }
+.home__footer-github:hover{
+ animation: shake 0.5s infinite;
+ }
 
 .app__homee__ {
     display: flex;
     justify-content: center;
 }
 
-/* .Typewriter{
-    font-size: 25px;
-} */
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 0;
+    border-radius: 50PX;
+}
+
+.download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 0;
+    background-color: #FFFF;
+    border: solid 1px #e8e8e82d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+    border-radius: 50PX;
+    color: #5b4431;
+    box-shadow: 1px 1px 10px #b08968;
+    font-family: serif;
+    letter-spacing: 1px;
+}
+
+.download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #7f55398f;
+    border: solid 1px #01e0572d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+    border-radius: 50PX;
+
+}
+
+.download-button:hover .download {
+    transform: translateY(100%)
+}
+
+.download svg polyline,
+.download svg line {
+    animation: docs 1s infinite;
+}
+
+@keyframes docs {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(-15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+
+
+
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.button {
+    --border-right: 6px;
+    --text-stroke-color: #deb092;
+    --animation-color: #7f5539;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: serif;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    margin-left: 20px;
+}
+
+/* this is the text, when you hover on button */
+.hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+
+/* hover */
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
 
 
 @media screen and (max-width: 1200px) {
@@ -141,7 +275,6 @@
     .Typewriter {
         margin-left: 30px;
     }
-
 
 }
 
@@ -470,6 +603,16 @@
     .app__home-img-containner img {
         margin-left: 75px;
     }
+
+    .type {
+        color: #042b44;
+        margin-top: 15px;
+        margin-left: 5px;
+        font-size: 18px;
+        font-family: serif;
+
+        /* animation: fade 5s 2ms forwards; */
+    }
 }
 
 @media screen and (max-width: 385px) {
@@ -532,7 +675,7 @@
 
     .app__home-img-containner img {
         margin-left: 95px;
-        margin-top: -60px;
+        margin-top: -40px;
         height: 220px;
         width: 170px;
     }
@@ -583,7 +726,7 @@
 
     .app__home-img-containner img {
         margin-left: 85px;
-        margin-top: -60px;
+        margin-top: -40px;
         height: 200px;
         width: 150px;
     }

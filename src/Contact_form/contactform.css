@@ -1,8 +1,101 @@
 .form {
-    background-color: #ede0d4;    padding: .5rem 20rem .5rem 20rem;
+    background-color: #ede0d4;
+    padding: .5rem 20rem .5rem 20rem;
     font-family: serif;
     letter-spacing: 2px;
 }
+
+.loaderr {
+    --col1: rgba(228, 19, 141, 0.925);
+    --col2: rgb(255, 179, 80);
+    font-size: 2em;
+    font-weight: 600;
+    perspective: 800px;
+    position: relative;
+    margin-left: -250px;
+    margin-top: 0;
+}
+
+.loaderr::after,
+.loaderr::before,
+.loaderr .text::after,
+.loaderr .text::before {
+    perspective: 800px;
+    animation: anim 2s ease-in-out infinite, dotMove 10s ease-out alternate infinite, move 10s linear infinite 1s;
+    ;
+    content: '●';
+    color: var(--col1);
+    position: absolute;
+    translate: -60px 500px;
+    width: 5px;
+    height: 5px;
+}
+
+.loaderr::before {
+    animation-delay: 3s;
+    color: var(--col1);
+}
+
+.loaderr .text::before {
+    color: var(--col2);
+    animation-delay: 2s;
+}
+
+.loaderr .text::after {
+    color: var(--col2);
+}
+
+.loaderr .text {
+    animation: anim 20s linear infinite, move 10s linear infinite 1s;
+    color: transparent;
+    background-image: linear-gradient(90deg,
+            var(--col1) 0%,
+            var(--col2) 100%);
+    background-clip: text;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transform: skew(5deg, -5deg);
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        text-shadow: 2px 0px 2px rgba(179, 158, 158, .5);
+    }
+
+    50% {
+        background-size: 0%;
+        background-position-x: left;
+        text-shadow: 2px 10px 6px rgba(179, 158, 158, 1);
+    }
+}
+
+@keyframes move {
+    50% {
+        translate: 0px 0px;
+        rotate: x 60deg;
+        transform: skew(-5deg, 5deg);
+    }
+}
+
+@keyframes dotMove {
+
+    0%,
+    100% {
+        translate: -60px 300px;
+    }
+
+    50% {
+        translate: 160px -250px;
+        scale: .5;
+        opacity: .85;
+    }
+}
+
+
 
 .form__inputs {
     display: flex;
@@ -11,7 +104,6 @@
     width: 550px;
     justify-content: center;
     border-width: 1px;
-    border-color: #7f5539;
     box-shadow: 1px 1px 3px#7f5539 inset;
     border-radius: 5px;
     padding: 0rem .5rem 0rem .5rem;
@@ -28,6 +120,19 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .loaderr {
+        margin-left: -200px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .loaderr {
+        margin-left: -160px;
+    }
+}
+
+
 @media screen and (max-width: 910px) {
     .form {
         padding: .5rem 5rem .5rem 9rem;
@@ -35,6 +140,10 @@
 
     .form__inputs {
         width: 550px
+    }
+
+    .loaderr {
+        margin-left: -160px;
     }
 }
 
@@ -48,13 +157,31 @@
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 790px) {
+
+    .loaderr {
+        margin-left: -150px;
+    }
+}
+
+@media screen and (max-width: 760px) {
     .form {
         padding: .5rem 5rem .5rem 7rem;
     }
 
     .form__inputs {
         width: 450px
+    }
+
+    .loaderr {
+        margin-left: -150px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .loaderr {
+        margin-left: -100px;
+        font-size: 1.7em;
     }
 }
 
@@ -66,6 +193,22 @@
     .form__inputs {
         width: 400px
     }
+
+    .loaderr {
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .loaderr {
+        margin-left: -80px;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .loaderr {
+        margin-left: -65px;
+    }
 }
 
 @media screen and (max-width: 510px) {
@@ -75,5 +218,42 @@
 
     .form__inputs {
         width: 300px
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .loaderr {
+        margin-left: -65px;
+    }
+}
+@media screen and (max-width: 435px) {
+    .loaderr {
+        margin-left: -55px;
+    }
+}
+@media screen and (max-width: 415px) {
+    .loaderr {
+        margin-left: -45px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .loaderr {
+        margin-left: -35px;
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width: 372px) {
+    .loaderr {
+        margin-left: -25px;
+    }
+}
+@media screen and (max-width: 350px) {
+    .loaderr {
+        margin-left: -15px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .loaderr {
+        margin-left: -5px;
     }
 }

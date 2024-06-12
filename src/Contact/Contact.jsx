@@ -10,6 +10,7 @@ const Contact = () => {
   return (
     <div className='app__contact' id="contact" >
       <div className='app__contact-outer'>
+        
         <center>   <h4 className='app__contact-subtitle' > Get In Touch! </h4> </center>
         <center>   <h4 className='app__contact-title' > Leave a meassage and I'll respond as soon as I can </h4> </center>
 

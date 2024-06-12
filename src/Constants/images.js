@@ -10,7 +10,7 @@ import ui from '../Assets/ui.jpeg';
 import show from '../Assets/showbooking.jpg';
 import travel from '../Assets/travelling.jpg';
 import wall from '../Assets/walleper.jpeg';
-import madhu1 from'../Assets/madhuu.jpg';
+import madhu1 from'../Assets/madhu.png';
 import acc_java_js from '../Assets/java__job.jpeg';
 import acc_prdt_js from '../Assets/acc__job.jpg';
 import bp_prdt_js from '../Assets/bp__job.png'
