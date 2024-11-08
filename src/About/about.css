@@ -152,6 +152,7 @@
 .about__highlight {
     font-size: medium;
     font-family: serif;
+    font-style: italic;
 }
 
 .qualification__experience {
@@ -183,7 +184,7 @@
     font-size: 15px;
     margin-left: 10px;
     margin-bottom: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: serif;
 }
 
 .year {
@@ -226,6 +227,75 @@
     margin-left: 310px;
 }
 
+
+.custom-prev,
+.custom-next {
+    background-color: #333;
+    color: #fff;
+    /* padding: 10px 15px; */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    visibility: hidden;
+}
+
+.custom-prev:hover,
+.custom-next:hover {
+    background-color: #555;
+}
+
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    width: auto;
+    /* Adjust width if needed */
+}
+
+.carousel-content {
+    /* padding: 20px; */
+    /* text-align: center; */
+}
+
+
+.custom-carousel {
+    height: 120px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.carousel-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    /* Enable 3D effect */
+}
+
+.flip-animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-animation.flip {
+    transform: rotateY(180deg);
+    /* Flip animation */
+}
+
+.link {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #9c6644;
+}
+
+.link:hover {
+    color: #bb957d;
+}
+
 @media screen and (max-width: 1250px) {
     .app__about {
         padding: 2.5rem 4rem 2rem 4rem;
@@ -252,7 +322,7 @@
     }
 
     .qualification__experience-internship {
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
     .qualification__education-school {
@@ -263,8 +333,78 @@
         margin-left: 0px;
     }
 
-    .qualification__education {
+    /* .qualification__education {
         padding: 0.5rem 5rem 0.5rem 0.1rem
+    } */
+
+    .qualification__experience-certificate .title {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .place {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .year {
+        font-size: small;
+    }
+
+    .qualification__experience-internship h3 {
+        font-size: medium;
+    }
+
+    .qualification__experience-internship .title {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .place {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .year {
+        font-size: small;
+    }
+
+    .qualification__education-degree h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-degree .title {
+        font-size: small;
+    }
+
+    .qualification__education-degree .place {
+        font-size: small;
+    }
+
+    .qualification__education-degree .year {
+        font-size: small;
+    }
+
+        .qualification__education-degree{
+            margin-left: 10px;
+        }
+
+    .qualification__education-school h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-school .title {
+        font-size: small;
+    }
+
+    .qualification__education-school .place {
+        font-size: small;
+    }
+
+    .qualification__education-school .year {
+        font-size: small;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
     }
 }
 
@@ -304,6 +444,72 @@
     .qualification__education {
         padding: 0.5rem 4rem 0.5rem 0.1rem
     }
+
+    .qualification__experience-certificate .title {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .place {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .year {
+        font-size: small;
+    }
+
+    .qualification__experience-internship h3 {
+        font-size: medium;
+    }
+
+    .qualification__experience-internship .title {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .place {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .year {
+        font-size: small;
+    }
+
+    .qualification__education-degree h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-degree .title {
+        font-size: small;
+    }
+
+    .qualification__education-degree .place {
+        font-size: small;
+    }
+
+    .qualification__education-degree .year {
+        font-size: small;
+    }
+
+    .qualification__education-school h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-school .title {
+        font-size: small;
+    }
+
+    .qualification__education-school .place {
+        font-size: small;
+    }
+
+    .qualification__education-school .year {
+        font-size: small;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -341,6 +547,72 @@
 
     .qualification__education {
         padding: 0.5rem 4rem 0.5rem 0.1rem
+    }
+
+    .qualification__experience-certificate .title {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .place {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .year {
+        font-size: small;
+    }
+
+    .qualification__experience-internship h3 {
+        font-size: medium;
+    }
+
+    .qualification__experience-internship .title {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .place {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .year {
+        font-size: small;
+    }
+
+    .qualification__education-degree h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-degree .title {
+        font-size: small;
+    }
+
+    .qualification__education-degree .place {
+        font-size: small;
+    }
+
+    .qualification__education-degree .year {
+        font-size: small;
+    }
+
+    .qualification__education-school h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-school .title {
+        font-size: small;
+    }
+
+    .qualification__education-school .place {
+        font-size: small;
+    }
+
+    .qualification__education-school .year {
+        font-size: small;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
     }
 }
 
@@ -380,6 +652,73 @@
     .qualification__education {
         padding: 0.5rem 3rem 0.5rem 0.1rem
     }
+
+    .qualification__experience-certificate .title {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .place {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .year {
+        font-size: small;
+    }
+
+    .qualification__experience-internship h3 {
+        font-size: medium;
+    }
+
+    .qualification__experience-internship .title {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .place {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .year {
+        font-size: small;
+    }
+
+    .qualification__education-degree h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-degree .title {
+        font-size: small;
+    }
+
+    .qualification__education-degree .place {
+        font-size: small;
+    }
+
+    .qualification__education-degree .year {
+        font-size: small;
+    }
+
+    .qualification__education-school h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-school .title {
+        font-size: small;
+    }
+
+    .qualification__education-school .place {
+        font-size: small;
+    }
+
+    .qualification__education-school .year {
+        font-size: small;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
+    }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -416,38 +755,7 @@
     }
 
     .qualification__education {
-        padding: 0.5rem 1rem 0.5rem 0.1rem
-    }
-}
-
-@media screen and (max-width: 510px) {
-    .about__info-content .about__first-content {
-        font-size: small;
-    }
-
-    .about__info-content .about__second-content {
-        font-size: small;
-    }
-
-    .qualification__experience {
-        flex-direction: column;
-        margin-top: 40px;
-        margin-left: 0px;
-    }
-
-    .qualification__experience-internship {
-        margin-top: 20px;
-        margin-left: 150px;
-    }
-
-    .qualification__education {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    .qualification__education-school {
-        margin-top: 20px;
-        margin-left: 180px;
+        padding: 0.5rem 1rem 0.5rem 0rem
     }
 
     .qualification__experience-certificate h3 {
@@ -513,6 +821,113 @@
     .qualification__education-school .year {
         font-size: small;
     }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .about__info-content .about__first-content {
+        font-size: small;
+    }
+
+    .about__info-content .about__second-content {
+        font-size: small;
+    }
+
+    .qualification__experience {
+        flex-direction: column;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+    .qualification__experience-internship {
+        margin-top: 20px;
+        margin-left: 190px;
+    }
+
+    .qualification__education {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .qualification__education-school {
+        margin-top: 20px;
+        margin-left: 190px;
+    }
+
+    .qualification__experience-certificate h3 {
+        font-size: medium;
+    }
+
+    .qualification__experience-certificate .title {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .place {
+        font-size: small;
+    }
+
+    .qualification__experience-certificate .year {
+        font-size: small;
+    }
+
+    .qualification__experience-internship h3 {
+        font-size: medium;
+    }
+
+    .qualification__experience-internship .title {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .place {
+        font-size: small;
+    }
+
+    .qualification__experience-internship .year {
+        font-size: small;
+    }
+
+    .qualification__education-degree h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-degree .title {
+        font-size: small;
+    }
+
+    .qualification__education-degree .place {
+        font-size: small;
+    }
+
+    .qualification__education-degree .year {
+        font-size: small;
+    }
+
+    .qualification__education-school h3 {
+        font-size: medium;
+    }
+
+    .qualification__education-school .title {
+        font-size: small;
+    }
+
+    .qualification__education-school .place {
+        font-size: small;
+    }
+
+    .qualification__education-school .year {
+        font-size: small;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 473px) {
@@ -546,42 +961,66 @@
         margin-top: -30px;
     }
 
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
+    }
 
 }
 
 @media screen and (max-width: 415px) {
     .qualification__experience-internship {
-        margin-left: 190px;
+        margin-left: 150px;
         margin-top: 35px;
     }
 
     .qualification__education-school {
-        margin-left: 190px;
+        margin-left: 150px;
         margin-top: 35px;
     }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
+    }
+
 }
 
 @media screen and (max-width: 385px) {
     .qualification__experience-internship {
-        margin-left: 170px;
+        margin-left: 160px;
         margin-top: 35px;
     }
 
     .qualification__education-school {
-        margin-left: 170px;
+        margin-left: 160px;
         margin-top: 35px;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
     }
 }
 
 @media screen and (max-width: 367px) {
     .qualification__experience-internship {
-        margin-left: 150px;
+        margin-left: 120px;
         margin-top: 35px;
     }
 
     .qualification__education-school {
-        margin-left: 150px;
+        margin-left: 120px;
         margin-top: 35px;
+    }
+
+    .custom-carousel {
+        height: 110px;
+        width: 210px;
+        overflow: hidden;
     }
 }
 
@@ -595,6 +1034,12 @@
         margin-left: 130px;
         margin-top: 35px;
     }
+
+    .custom-carousel {
+        height: 125px;
+        width: 190px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 332px) {
@@ -607,6 +1052,12 @@
         margin-left: 110px;
         margin-top: 35px;
     }
+
+    .custom-carousel {
+        height: 125px;
+        width: 170px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width: 325px) {
@@ -618,5 +1069,11 @@
     .qualification__education-school {
         margin-left: 90px;
         margin-top: 35px;
+    }
+
+    .custom-carousel {
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
     }
 }

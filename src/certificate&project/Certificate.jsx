@@ -11,7 +11,7 @@ function CarouselFadeExample() {
                 <div className='app__certificate-alone' >    <h2> <center>Certificates</center></h2>
                     <div className='app__certificate__'>
 
-                        <Carousel fade>
+                        <Carousel fade interval={2000} pause="false">
                             <Carousel.Item className='item'>
                                 <img src={images.java} height={500} width={800} className='img' />
 
@@ -205,7 +205,7 @@ function CarouselFadeExample() {
                     <h2>Projects</h2>
                     <div className='app__project__'>
 
-                        <Carousel fade>
+                        <Carousel fade interval={2000} pause="false">
                             <Carousel.Item className='item'>
                                 <img src={images.show} height={500} width={800} className='img2' />
 
@@ -233,10 +233,57 @@ function CarouselFadeExample() {
                                     </p>
                                     <button className='custom__buttonn' onClick={(e) => {
                                         e.preventDefault();
-                                        window.open('https://github.com/Madhushree22/travelling_landingPage.git', '_blank')
+                                        window.open('https://github.com/Madhushree22/Landing_Page-travelling-.git', '_blank')
                                     }}>Source Code! </button>
                                 </Carousel.Caption>
                             </Carousel.Item>
+
+                            <Carousel.Item className='item'>
+                                <img src={images.task_manager} height={500} width={800} className='img2' />
+
+                                <Carousel.Caption className='caption'>
+
+                                    <p className="headingg">
+                                        Task_Manager ( Website )
+                                        <p> Using React Js</p>
+                                    </p>
+                                    <button className='custom__buttonn' onClick={(e) => {
+                                        e.preventDefault();
+                                        window.open('https://github.com/Madhushree22/Task_Manager.git', '_blank')
+                                    }}>Source Code! </button>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+                            <Carousel.Item className='item'>
+                                <img src={images.chat_media} height={500} width={800} className='img2' />
+
+                                <Carousel.Caption className='caption'>
+
+                                    <p className="headingg">
+                                        Snap_Media (Social media website)
+                                        <p> Using Vite | React Js| Type Js</p>
+                                    </p>
+                                    <button className='custom__buttonn' onClick={(e) => {
+                                        e.preventDefault();
+                                        window.open('https://github.com/Madhushree22/Snap_media.git', '_blank')
+                                    }}>Source Code! </button>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
+                            <Carousel.Item className='item'>
+                                <img src={images.payment_integration} height={500} width={800} className='img2' />
+
+                                <Carousel.Caption className='caption'>
+
+                                    <p className="headingg">
+                                        Payment_Integration Project
+                                        <p> Using Java Spring boot framework</p>
+                                    </p>
+                                    <button className='custom__buttonn' >
+                                        Internship Project! </button>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+
 
 
                         </Carousel>

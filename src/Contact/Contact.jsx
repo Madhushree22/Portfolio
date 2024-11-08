@@ -6,8 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
-  
-  return (
+ return (
     <div className='app__contact' id="contact" >
       <div className='app__contact-outer'>
         

@@ -75,7 +75,7 @@ const Home = () => {
                     <div class="docs"> Dowload CV</div>
                     <div class="download" onClick={(e) => {
                       e.preventDefault();
-                      window.open('https://drive.google.com/file/d/1SGRAMKuRHksOENj-xnqMKUY8iO8T_J0L/view?usp=sharing', '_blank')
+                      window.open('https://drive.google.com/file/d/1B4aKRgvc-K-FBJypQFUETPKBm2qjnmNH/view?usp=sharing', '_blank')
                     }}>
                       <svg class="css-i6dzq1" stroke-linejoin="round" stroke-linecap="round" fill="none" stroke-width="2" stroke="currentColor" height="24" width="24" viewBox="0 0 24 24" color='white'><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line y2="3" x2="12" y1="15" x1="12"></line></svg>
                     </div>
